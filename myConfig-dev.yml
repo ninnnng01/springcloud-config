@@ -1,20 +1,2 @@
-server:
-  port: 9555
-spring:
-  application:
-    name: cloud-config-center   #注册进Eureka服务器的微服务名
-  cloud:
-    config:
-      server:
-        git:
-          uri: git@github:com:ninnnng01/springcloud-config.git
-          ###搜索目录
-          search-paths:
-            - springcloud-config
-      label: master
-
-#服务注册到eureka服务器
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:7001/eureka
+config:
+  info: i am the air
